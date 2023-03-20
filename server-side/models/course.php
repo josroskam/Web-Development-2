@@ -30,13 +30,14 @@ class Course {
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'start_date' => $this->start_date,
-            'end_date' => $this->end_date,
+            'start_date' => $this->start_date->format('Y-m-d'),
+            'end_date' => $this->end_date->format('Y-m-d'),
             'description' => $this->description,
             'capacity' => $this->capacity,
             'location' => $this->location
         ];
     }
+    
 
     // getters setters
     public function getId() {
