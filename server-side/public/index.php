@@ -30,5 +30,9 @@ $router->delete('/categories/(\d+)', 'CategoryController@delete');
 // routes for the users endpoint
 $router->post('/users/login', 'UserController@login');
 
+
+// eindopdracht
+$router->get('/courses', 'CourseController@getAll');
+
 // Run it!
-$router->run();
+$router->run(); 
