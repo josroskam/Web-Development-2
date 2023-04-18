@@ -77,6 +77,6 @@ class CategoryController extends Controller
             $this->respondWithError(500, $e->getMessage());
         }
 
-        $this->respond(true);
+        $this->respond(true); 
     }
 }
